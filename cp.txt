@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>ร้าน CHANGPONG TRIBE</title>
+  <style>
+    body {
+      font-family:'prompt' , sans-serif;
+      background-image: url('CP.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+      margin: 0;
+      padding: 0;
+      color: #000;
+    }
+
+    .navbar {
+      background-color: rgba(255, 255, 255, 0.95);
+      display: flex;
+      padding: 15px 30px;
+      gap: 30px;
+      align-items: center;
+      position: relative;
+      z-index: 10;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: white;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      z-index: 1000;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 10px;
+      color: #000;
+      text-decoration: none;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #eee;
+    }
+
+    .content {
+      padding: 30px;
+    }
+
+    .product {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 400px;
+    }
+
+    .product img {
+      width: 150px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+
+    .product h2, .product p, .product a {
+      color: #000;
+    }
+
+    /* สไตล์สำหรับ modal */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.8);
+    }
+
+    .modal-content {
+      margin: 5% auto;
+      display: block;
+      max-width: 90%;
+      max-height: 90%;
+    }
+
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 35px;
+      color: #fff;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- แถบเมนู -->
+  <div class="navbar">
+    <a href="miami.html">หน้าแรก</a>
+    <a href="https://maps.app.goo.gl/pxs57UR1BSQEJFa56" target="_blank">ที่ตั้งร้าน</a>
+
+<div class="dropdown">
+    <span style="cursor: pointer; font-weight: bold;">โปรโมชั่น</span>
+      <div class="dropdown-content">
+        <a href="cp1j.html" >เปิดของใหม่ทุกวันเสาร์</a>
+        <a href="cp2j.html" target="_blank">โปรโมชั่น ถุงละ 100 บาท ทุกวันจันทร์</a>
+        
+      </div>
+    </div>
+ 
+
+    <div class="dropdown">
+      <span style="cursor: pointer; font-weight: bold;">ติดต่อ</span>
+      <div class="dropdown-content">
+        <a href="https://www.facebook.com/share/1AnFiRHt4k/?mibextid=wwXIfr" target="_blank">Facebook</a>
+        <a href="https://www.tiktok.com/@changpong_tribe?_t=ZS-8w9ZTjHJnNP&_r=1" target="_blank">TikTok</a>
+        <a href="https://www.instagram.com/changpong_tribe?igsh=MXFkYjJycnNseGhxNw==" target="_blank">Instagram</a>
+        <a href="https://lin.ee/tolFllQ" target="_blank">Line</a>
+      </div>
+    </div>
+</div>
+
+<!-- เนื้อหา -->
+<div class="content" style="display: flex; justify-content: center; padding: 20px;">
+  <div class="product" style="text-align: center; display: flex; flex-wrap: wrap; gap: 20px; max-width: 1000px; background: rgba(255, 255, 255, 0.9); border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); padding: 20px;">
+    <h1 style="width: 100%; text-align: center; margin: 0; line-height:1;">ร้าน CHANGPONG TRIBE</h1>
+    <p1 style="width: 100%; text-align: center; margin: 0;"></p1>
+ <div class="content" style="display: flex; justify-content: center;">
+  <div class="product" style="
+      max-width: 1000px;
+      width: 100%;
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    ">
+    
+    
+
+    <!-- กล่องที่จัดรูปให้อยู่กึ่งกลางแนวนอน -->
+    <div style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin: 20px 0;
+        flex-wrap: wrap;
+      ">
+      <img src="CP.jpg" alt="กระเป๋าญี่ปุ่น" onclick="openModal(this.src)" style="width: 400px; height: auto; border-radius: 8px;">
+      <img src="CP2.jpg" alt="กระเป๋าญี่ปุ่น 2" onclick="openModal(this.src)" style="width: 400px; height: auto; border-radius: 8px;">
+    </div>
+
+    
+ 
+    <h2 style="width: 100%; margin-top: 20px;">เสื้อผ้าญี่ปุ่นมือ2</h2>
+    <p style="width: 100%; margin-top: 10px;">✨แวะมาช้อปกันได้ที่ร้าน CHANGPONG TRIBE ร้านเสื้อผ้ามือสองสไตล์ญี่ปุ่น คัดพิเศษทุกชิ้น ส่งตรงจากญี่ปุ่น ราคาน่ารัก เพราะลดราคาทุกวัน สูงสุดถึง 90% คุณภาพดี ใส่แล้วไม่ซ้ำใครแน่นอน!</p>
+<p style="width: 100%; margin-top: 10px;"></p>
+    <p style="width: 100%; margin-top: 10px;">
+      <a href="https://line.me/ti/g2/KvMNGbHvjO0N7Fq12dhLzGDEOXxEdcgCnU1ykQ" target="_blank">เข้ากลุ่มเพื่อรับโปรโมชั่น</a>
+      หรือ
+      <a href="https://lin.ee/tolFllQ" target="_blank">ติดต่อพนักงาน</a>
+    </p>
+  </div>
+</div>
+
+  <!-- เพิ่มวิดีโอตรงนี้ -->
+<!-- กล่องกรอบหัวข้อ + วิดีโอเรียงแนวนอน -->
+<div style="max-width: 1000px; margin: 40px auto; padding: 20px; background: rgba(255,255,255,0.9); border: 2px solid #ccc; border-radius: 15px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+
+  <h2 style="text-align: center; margin-bottom: 20px;">วิดีโอบรรยากาศวันเปิดสินค้าล๊อตใหม่</h2>
+
+<p style="width: 100%; margin-top: 10px;">✨เปิดสินค้าใหม่ทุกวัน เสาร์และโปรโมชั่น ถุงละ 100 ทุกวันจันทร์✨ </p>
+<!-- วิดีโอขนาดเล็ก (thumbnail) -->
+<video class="thumbVideo" width="200" style="border-radius: 10px; cursor: pointer;" muted data-src="cp3.mp4">
+  <source src="cp3.mp4" type="video/mp4">
+</video>
+
+<video class="thumbVideo" width="200" style="border-radius: 10px; cursor: pointer;" muted data-src="cp4.mp4">
+  <source src="cp4.mp4" type="video/mp4">
+</video>
+
+
+
+<!-- กล่อง popup วิดีโอใหญ่ -->
+<div id="popup" style="
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+">
+  <video id="popupVideo" controls autoplay style="max-width: 90%; border-radius: 10px;">
+    <source id="popupSource" src="" type="video/mp4">
+  </video>
+</div>
+
+<script>
+  const popup = document.getElementById('popup');
+  const popupVideo = document.getElementById('popupVideo');
+  const popupSource = document.getElementById('popupSource');
+
+  // เลือกทุก video ที่มี class="thumbVideo"
+  document.querySelectorAll('.thumbVideo').forEach(video => {
+    video.addEventListener('click', function () {
+      const videoSrc = this.getAttribute('data-src');
+      popupSource.src = videoSrc;
+      popupVideo.load(); // โหลด source ใหม่
+      popup.style.display = 'flex';
+      popupVideo.play(); // เล่นอัตโนมัติ
+    });
+  });
+
+  // ปิด popup เมื่อคลิกพื้นหลัง
+  popup.onclick = function (e) {
+    if (e.target.id === 'popup') {
+      popup.style.display = 'none';
+      popupVideo.pause();
+    }
+  };
+</script>
+
+
+  <!-- Modal สำหรับขยายรูป -->
+  <div id="imgModal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    function openModal(src) {
+      const modal = document.getElementById("imgModal");
+      const modalImg = document.getElementById("modalImage");
+      modal.style.display = "block";
+      modalImg.src = src;
+    }
+
+    function closeModal() {
+      document.getElementById("imgModal").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>
