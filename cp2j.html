@@ -5,44 +5,116 @@
   <meta charset="UTF-8">
   <title>ร้าน CHANGPONG TRIBE</title>
   <style>
-   @media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 10px;
-    padding: 10px;
-  }
+   body {
+      font-family:'prompt' , sans-serif;
+      background-image: url('CP.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+      margin: 0;
+      padding: 0;
+      color: #000;
+    }
 
-  .dropdown-content {
-    position: static;
-    box-shadow: none;
-    background: #f9f9f9;
-    border-radius: 6px;
-  }
+    .navbar {
+      background-color: rgba(255, 255, 255, 0.95);
+      display: flex;
+      padding: 15px 30px;
+      gap: 30px;
+      align-items: center;
+      position: relative;
+      z-index: 10;
+    }
 
-  .dropdown .dropdown-toggle {
-    display: block;
-    font-weight: bold;
-    padding: 12px;
-    background-color: #eee;
-    border-radius: 6px;
-  }
+    .navbar a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+    }
 
-  .dropdown .dropdown-content {
-    display: none;
-    padding: 5px 0;
-  }
+    .dropdown {
+      position: relative;
+    }
 
-  .dropdown.open .dropdown-content {
-    display: block;
-  }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
 
-  .dropdown-content a {
-    padding: 10px;
-    background-color: white;
-    border-bottom: 1px solid #ddd;
-  }
-}
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: white;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      z-index: 1000;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 10px;
+      color: #000;
+      text-decoration: none;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #eee;
+    }
+
+    .content {
+      padding: 30px;
+    }
+
+    .product {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 400px;
+    }
+
+    .product img {
+      width: 150px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+
+    .product h2, .product p, .product a {
+      color: #000;
+    }
+
+    /* สไตล์สำหรับ modal */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.8);
+    }
+
+    .modal-content {
+      margin: 5% auto;
+      display: block;
+      max-width: 90%;
+      max-height: 90%;
+    }
+
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 35px;
+      color: #fff;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
   </style>
 </head>
 <body>
