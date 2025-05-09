@@ -118,23 +118,14 @@
 </head>
 <body>
 
-  <!-- แถบเมนู -->
+   <!-- แถบเมนู -->
   <div class="navbar">
     <a href="index.html">หน้าแรก</a>
     <a href="https://maps.app.goo.gl/pxs57UR1BSQEJFa56" target="_blank">ที่ตั้งร้าน</a>
-
-<div class="dropdown">
-    <span style="cursor: pointer; font-weight: bold;">โปรโมชั่น</span>
-      <div class="dropdown-content">
-        <a href="cp1j.html">เปิดของใหม่ทุกวันเสาร์</a>
-        <a href="cp2j.html" >โปรโมชั่น ถุงละ 100 บาท ทุกวันจันทร์</a>
-        
-      </div>
-    </div>
  
 
     <div class="dropdown">
-      <span style="cursor: pointer; font-weight: bold;">ติดต่อ</span>
+      <span style="cursor: pointer; font-weight: bold;">ช่องทางการติดตาม</span>
       <div class="dropdown-content">
         <a href="https://www.facebook.com/share/1AnFiRHt4k/?mibextid=wwXIfr" target="_blank">Facebook</a>
         <a href="https://www.tiktok.com/@changpong_tribe?_t=ZS-8w9ZTjHJnNP&_r=1" target="_blank">TikTok</a>
